@@ -5,7 +5,7 @@
     "buildCommand": "mvn clean package -DskipTests -B"
   },
   "deploy": {
-    "startCommand": "java -Xmx512m -jar target/backend-0.0.1-SNAPSHOT.jar",
+    "startCommand": "java -Xmx512m -jar /app/target/backend-0.0.1-SNAPSHOT.jar",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 3
   }
