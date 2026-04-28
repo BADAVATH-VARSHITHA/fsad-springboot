@@ -1,5 +1,11 @@
 [phases.setup]
 nixPkgs = ["jdk17_headless"]
 
+[phases.install]
+cmds = []
+
+[phases.build]
+cmds = ["echo 'Using pre-built JAR, skipping Maven build'"]
+
 [start]
 cmd = "java -Xmx512m -jar target/backend-0.0.1-SNAPSHOT.jar"
