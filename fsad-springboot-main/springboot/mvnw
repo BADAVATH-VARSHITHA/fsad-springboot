@@ -1,0 +1,20 @@
+#!/bin/sh
+# ----------------------------------------------------------------------------
+# Licensed to the Apache Software Foundation (ASF)
+# Maven Wrapper startup batch script
+# ----------------------------------------------------------------------------
+
+if [ -z "$MAVEN_WRAPPER_JAR_PATH" ]; then
+  MAVEN_WRAPPER_JAR_PATH=".mvn/wrapper/maven-wrapper.jar"
+fi
+
+if [ -r "$MAVEN_WRAPPER_JAR_PATH" ]; then
+  WRAPPER_JAR="$MAVEN_WRAPPER_JAR_PATH"
+else
+  WRAPPER_JAR=""
+fi
+
+MAVEN_HOME=${MAVEN_HOME:-"/usr/share/maven"}
+MVN_CMD="$MAVEN_HOME/bin/mvn"
+
+exec "$MVN_CMD" "$@"
