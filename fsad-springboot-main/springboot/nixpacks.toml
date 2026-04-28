@@ -8,4 +8,4 @@ cmds = []
 cmds = ["echo 'Using pre-built JAR'"]
 
 [start]
-cmd = "java -Xmx512m -jar fsad-springboot-main/springboot/target/backend-0.0.1-SNAPSHOT.jar"
+cmd = "java -Xmx512m -jar target/backend-0.0.1-SNAPSHOT.jar"
